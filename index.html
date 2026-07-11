@@ -1,3 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brisbane Tours & Accommodation</title>
+    <style>
+        /* 1. Global Reset & Base Typography */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333333;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        /* 2. Responsive CSS Grid Layout */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* 3. Modern Card Design */
+        .card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            border: 1px solid #eef2f5;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-content {
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        /* 4. Content Elements Hierarchy */
+        .card-tag {
+            align-self: flex-start;
+            background-color: #f1f3f5;
+            color: #495057;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 4px 10px;
+            border-radius: 4px;
+            margin-bottom: 12px;
+        }
+
+        .card h3 {
+            font-size: 1.35rem;
+            color: #1a1a1a;
+            line-height: 1.3;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: #626d7a;
+            margin-bottom: 24px;
+            flex-grow: 1; /* Pushes button to bottom so all buttons align perfectly */
+        }
+
+        /* 5. Styled Call-to-Action Buttons */
+        .affiliate-btn {
+            display: block;
+            text-align: center;
+            background-color: #0071eb;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            padding: 12px 20px;
+            border-radius: 6px;
+            transition: background-color 0.15s ease;
+        }
+
+        .affiliate-btn:hover {
+            background-color: #0059b8;
+        }
+
+        /* 6. Custom styling variables for your unique Hotel Card */
+        .hotel-card {
+            border: 2px solid #2e7d32 !important; /* Polished dark green */
+            background-color: #f1f8e9;
+        }
+        
+        .hotel-btn {
+            background-color: #2e7d32;
+        }
+        
+        .hotel-btn:hover {
+            background-color: #1b5e20;
+        }
+    </style>
+</head>
+<body>
+
 <div class="grid-container">
 
     <!-- Card 1 -->
@@ -114,25 +232,25 @@
         </div>
     </div>
 
-    <!-- Hotel Card -->
-    <div class="card" style="border: 2px solid #1e4620;">
+    <!-- Hotel Card (Fixed broken HTML tags & externalized styles) -->
+    <div class="card hotel-card">
         <div class="card-content">
-            <span class="card-tag" style="background-color:#e3f2fd;color:#0d47a1;">
+            <span class="card-tag" style="background-color:#e3f2fd; color:#0d47a1;">
                 Accommodation
             </span>
-
             <h3>Where to Stay in Brisbane</h3>
-
             <p>
                 From luxury riverfront hotels in the CBD to vibrant boutique stays
                 in Fortitude Valley. Find the perfect base for your Brisbane
                 adventures at the guaranteed best rates.
             </p>
-
-            #
+            <a href="#" class="affiliate-btn hotel-btn">
                 Hotel Deals Coming Soon
             </a>
         </div>
     </div>
 
 </div>
+
+</body>
+</html>
