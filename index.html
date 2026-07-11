@@ -1,138 +1,75 @@
-<div class="grid-container">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Things to Do in Brisbane</title>
 
-    <!-- Card 1 -->
-    <div class="card">
-        <div class="card-content">
-            <span class="card-tag">Rainforest &amp; Wildlife</span>
-            <h3>Springbrook &amp; Mt Tamborine Tour</h3>
-            <p>
-                Escape into the spectacular Gold Coast hinterland. Walk along the famous
-                Rainforest Skywalk, witness the stunning Natural Bridge waterfall, and
-                step inside a magical subterranean glow worm cave.
-            </p>
-            <a href="https://www.viator.com/tours/Brisbane/Springbrook-and-Tamborine-Rainforest-Tour-Including-Natural-Bridge-and-Glow-Worm-Cave/d363-5688QDTSP?pid=P00309320&mcid=42383&medium=link&medium_version=selector"
-               class="affiliate-btn"
-               target="_blank"
-               rel="noopener noreferrer">
-                Book Rainforest Tour
-            </a>
-        </div>
-    </div>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
-    <!-- Card 2 -->
-    <div class="card">
-        <div class="card-content">
-            <span class="card-tag">Adventure</span>
-            <h3>Story Bridge Climb</h3>
-            <p>
-                Face your fears and scale one of Brisbane's most iconic landmarks.
-                Enjoy breathtaking 360-degree views of the river, city skyline,
-                and Moreton Bay from the twilight summit climb.
-            </p>
-            <a href="https://www.viator.com/tours/Brisbane/Brisbane-Story-Bridge-Day-and-Night-Climbs/d363-2184BNECLIMB?pid=P00309320&mcid=42383&medium=link&medium_version=selector"
-               class="affiliate-btn"
-               target="_blank"
-               rel="noopener noreferrer">
-                Book Your Climb Here
-            </a>
-        </div>
-    </div>
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            padding: 40px 20px;
+        }
 
-    <!-- Card 3 -->
-    <div class="card">
-        <div class="card-content">
-            <span class="card-tag">Culture &amp; Art</span>
-            <h3>City Art &amp; Design Walking Tour</h3>
-            <p>
-                Discover Brisbane's vibrant creative scene. Join an expert local guide
-                to explore hidden laneway street art, historic architecture, and
-                world-class public design installations across the CBD.
-            </p>
-            <a href="https://www.viator.com/tours/Brisbane/Brisbane-City-Art-and-Design-Walking-Tour/d363-7501P2?pid=P00309320&mcid=42383&medium=link&medium_version=selector"
-               class="affiliate-btn"
-               target="_blank"
-               rel="noopener noreferrer">
-                Book Walking Tour
-            </a>
-        </div>
-    </div>
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
 
-    <!-- Card 4 -->
-    <div class="card">
-        <div class="card-content">
-            <span class="card-tag">Nature &amp; Cruise</span>
-            <h3>Lone Pine &amp; River Cruise</h3>
-            <p>
-                Enjoy a 2-in-1 experience! Take a leisurely, scenic river cruise
-                departing from South Bank directly to the world's first and largest
-                koala sanctuary to meet native Australian wildlife.
-            </p>
-            <a href="https://www.viator.com/tours/Brisbane/Lone-Pine-Koala-Sanctuary-Admission-with-Brisbane-River-Cruise/d363-6196KOALA?pid=P00309320&mcid=42383&medium=link&medium_version=selector"
-               class="affiliate-btn"
-               target="_blank"
-               rel="noopener noreferrer">
-                Book Cruise &amp; Entry
-            </a>
-        </div>
-    </div>
+        header h1 {
+            color: #1e4620;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
 
-    <!-- Card 5 -->
-    <div class="card">
-        <div class="card-content">
-            <span class="card-tag">Culinary &amp; Culture</span>
-            <h3>A Taste of Queensland Food Tour</h3>
-            <p>
-                Indulge in a premium culinary journey through Brisbane's top dining
-                hotspots. Sample local delicacies, artisanal treats, and native
-                ingredients with an expert guide.
-            </p>
-            <a href="https://www.viator.com/tours/Brisbane/Brisbane-Food-Tour-A-Taste-of-Queensland/d363-39366P1?pid=P00309320&mcid=42383&medium=link&medium_version=selector"
-               class="affiliate-btn"
-               target="_blank"
-               rel="noopener noreferrer">
-                Book Food Tour
-            </a>
-        </div>
-    </div>
+        header p {
+            color: #666;
+            font-size: 1.1rem;
+        }
 
-    <!-- Card 6 -->
-    <div class="card">
-        <div class="card-content">
-            <span class="card-tag">Extreme Adventure</span>
-            <h3>Kangaroo Point Rock Climbing</h3>
-            <p>
-                Challenge yourself by scaling the iconic weathered outdoor cliffs at
-                Kangaroo Point. Enjoy an exhilarating multi-level climb while taking
-                in epic views of the Brisbane River and CBD skyline.
-            </p>
-            <a href="https://www.viator.com/tours/Brisbane/Rock-Climbing-at-the-Kangaroo-Point-Cliffs-in-Brisbane/d363-23170P4?pid=P00309320&mcid=42383&medium=link&medium_version=selector"
-               class="affiliate-btn"
-               target="_blank"
-               rel="noopener noreferrer">
-                Book Cliff Climb
-            </a>
-        </div>
-    </div>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
 
-    <!-- Hotel Card -->
-    <div class="card" style="border: 2px solid #1e4620;">
-        <div class="card-content">
-            <span class="card-tag" style="background-color:#e3f2fd;color:#0d47a1;">
-                Accommodation
-            </span>
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.2s ease;
+        }
 
-            <h3>Where to Stay in Brisbane</h3>
+        .card:hover {
+            transform: translateY(-5px);
+        }
 
-            <p>
-                From luxury riverfront hotels in the CBD to vibrant boutique stays
-                in Fortitude Valley. Find the perfect base for your Brisbane
-                adventures at the guaranteed best rates.
-            </p>
+        .card-content {
+            padding: 25px;
+        }
 
-            #
-                Hotel Deals Coming Soon
-            </a>
-        </div>
-    </div>
+        .card-tag {
+            background-color: #e8f5e9;
+            color: #2e7d32;
+            padding: 5px 10px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            border-radius: 20px;
+            display: inline-block;
+            margin-bottom: 12px;
+        }
 
-</div>
+        .card h3 {
+            color: #222;
+            margin-
