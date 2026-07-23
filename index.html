@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brisbane Tours & Accommodation</title>
+    <title>Brisbane Tours & Activities</title>
+
     <style>
         * {
             box-sizing: border-box;
@@ -19,29 +20,16 @@
             padding: 40px 20px;
         }
 
-        <div style="max-width:1200px; margin:0 auto 30px; text-align:center;">
-    <a href="hotels.html"
-       style="
-           display:inline-block;
-           background:#0d47a1;
-           color:#fff;
-           padding:12px 22px;
-           border-radius:8px;
-           text-decoration:none;
-           font-weight:600;
-       ">
-        View Top 5 Hotels in Brisbane
-    </a>
-</div>
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 35px; /* Hotels page uses slightly more breathing room */
-    max-width: 1200px;
-    margin: 0 auto;
+        /* Grid layout matched to hotels page */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 35px; /* Increased spacing to match hotel cards */
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
+        /* Card styling */
         .card {
             background-color: #ffffff;
             border-radius: 14px;
@@ -49,8 +37,8 @@
             overflow: hidden;
             display: flex;
             flex-direction: column;
-            transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s ease;
             border: 1px solid #e2e8f0;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
         }
 
         .card:hover {
@@ -65,9 +53,10 @@
             height: 100%;
         }
 
+        /* Updated image size to match hotels page */
         .activity-img {
             width: 100%;
-            height: 240px;
+            height: 240px; /* MATCHED TO HOTELS PAGE */
             object-fit: cover;
             border-radius: 12px;
             margin-bottom: 15px;
@@ -78,235 +67,4 @@
             align-self: flex-start;
             background-color: #edf2f7;
             color: #4a5568;
-            font-size: 0.72rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.06em;
-            padding: 5px 10px;
-            border-radius: 5px;
-            margin-bottom: 12px;
-        }
-
-        .card-rating {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            font-size: 0.85rem;
-            color: #718096;
-            margin-bottom: 12px;
-        }
-
-        .stars {
-            color: #ff9800;
-            font-size: 1rem;
-            letter-spacing: -1px;
-        }
-
-        .card h3 {
-            font-size: 1.3rem;
-            color: #1a202c;
-            line-height: 1.35;
-            margin-bottom: 12px;
-        }
-
-        .card p {
-            font-size: 0.95rem;
-            color: #4a5568;
-            margin-bottom: 24px;
-            flex-grow: 1;
-        }
-
-        .card-price {
-            border-top: 1px dashed #e2e8f0;
-            padding-top: 16px;
-            margin-bottom: 16px;
-            font-size: 1.3rem;
-            font-weight: 700;
-            color: #1a202c;
-        }
-
-        .price-label {
-            font-weight: 400;
-            font-size: 0.8rem;
-            color: #718096;
-            display: block;
-            margin-bottom: 2px;
-        }
-
-        .affiliate-btn {
-            display: block;
-            text-align: center;
-            background-color: #0071eb;
-            color: #ffffff;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.95rem;
-            padding: 12px 20px;
-            border-radius: 8px;
-            transition: background-color 0.15s ease;
-        }
-
-        .affiliate-btn:hover {
-            background-color: #0059b8;
-        }
-    </style>
-</head>
-<body>
-
-<div class="grid-container">
-
-    <!-- Card 1: Springbrook -->
-    <div class="card">
-        <div class="card-content">
-            <img src="images/Brisbaneactivities/springbrookandmttambourine.jpg" alt="Springbrook & Mt Tamborine Rainforest" class="activity-img">
-
-            <span class="card-tag">Rainforest & Wildlife</span>
-
-            <div class="card-rating">
-                <span class="stars">★★★★★</span>
-                <span>4.8 (1,420+ reviews)</span>
-            </div>
-
-            <h3>Deluxe Springbrook & Mt Tamborine Glow Worms and Famous Skywalk</h3>
-
-            <p>Escape into the spectacular Gold Coast hinterland. Walk along the famous Rainforest Skywalk, witness the stunning Natural Bridge waterfall, and step inside a magical subterranean glow worm cave.</p>
-
-            <div class="card-price">
-                <span class="price-label">From (AUD)</span>
-                $164.00
-            </div>
-
-            <a href="https://viator.com" class="affiliate-btn" target="_blank">Check Availability & Prices</a>
-        </div>
-    </div>
-
-    <!-- Card 2: Story Bridge -->
-    <div class="card">
-        <div class="card-content">
-            <img src="images/Brisbaneactivities/Storybridge.webp" alt="Story Bridge Climb" class="activity-img">
-
-            <span class="card-tag">Adventure</span>
-
-            <div class="card-rating">
-                <span class="stars">★★★★★</span>
-                <span>4.9 (850+ reviews)</span>
-            </div>
-
-            <h3>Story Bridge Climb</h3>
-
-            <p>Face your fears and scale one of Brisbane's most iconic landmarks. Enjoy breathtaking 360-degree views of the river, city skyline, and Moreton Bay from the twilight summit climb.</p>
-
-            <div class="card-price">
-                <span class="price-label">From (AUD)</span>
-                $159.00
-            </div>
-
-            <a href="https://viator.com" class="affiliate-btn" target="_blank">Check Availability & Prices</a>
-        </div>
-    </div>
-
-    <!-- Card 3: CBD Art Tour -->
-    <div class="card">
-        <div class="card-content">
-            <img src="images/Brisbaneactivities/designtourpng.png" alt="City Art & Design Walking Tour" class="activity-img">
-
-            <span class="card-tag">Culture & Art</span>
-
-            <div class="card-rating">
-                <span class="stars">★★★★★</span>
-                <span>4.7 (120+ reviews)</span>
-            </div>
-
-            <h3>City Art & Design Walking Tour</h3>
-
-            <p>Discover Brisbane's vibrant creative scene. Explore hidden laneway street art, historic architecture, and world-class public design installations across the CBD.</p>
-
-            <div class="card-price">
-                <span class="price-label">From (AUD)</span>
-                $45.00
-            </div>
-
-            <a href="https://viator.com" class="affiliate-btn" target="_blank">Check Availability & Prices</a>
-        </div>
-    </div>
-
-    <!-- Card 4: Lone Pine + River Cruise -->
-    <div class="card">
-        <div class="card-content">
-            <img src="images/Brisbaneactivities/LonePineKoalaSanctuary.webp" alt="Lone Pine & River Cruise" class="activity-img">
-
-            <span class="card-tag">Nature & Cruise</span>
-
-            <div class="card-rating">
-                <span class="stars">★★★★★</span>
-                <span>4.8 (2,100+ reviews)</span>
-            </div>
-
-            <h3>Lone Pine & River Cruise</h3>
-
-            <p>Enjoy a 2-in-1 experience! Take a scenic river cruise from South Bank directly to the world's first and largest koala sanctuary.</p>
-
-            <div class="card-price">
-                <span class="price-label">From (AUD)</span>
-                $98.00
-            </div>
-
-            <a href="https://viator.com" class="affiliate-btn" target="_blank">Check Availability & Prices</a>
-        </div>
-    </div>
-
-    <!-- Card 5: Food Tour -->
-    <div class="card">
-        <div class="card-content">
-            <img src="images/Brisbaneactivities/Foodtour.webp" alt="Brisbane Food Tour" class="activity-img">
-
-            <span class="card-tag">Culinary & Culture</span>
-
-            <div class="card-rating">
-                <span class="stars">★★★★★</span>
-                <span>4.9 (340+ reviews)</span>
-            </div>
-
-            <h3>A Taste of Queensland Food Tour</h3>
-
-            <p>Indulge in a premium culinary journey through Brisbane's top dining hotspots. Sample local delicacies, artisanal treats, and native ingredients with an expert guide.</p>
-
-            <div class="card-price">
-                <span class="price-label">From (AUD)</span>
-                $135.00
-            </div>
-
-            <a href="https://viator.com" class="affiliate-btn" target="_blank">Check Availability & Prices</a>
-        </div>
-    </div>
-
-    <!-- Card 6: Kangaroo Point Climb -->
-    <div class="card">
-        <div class="card-content">
-            <img src="images/Brisbaneactivities/kangaroo-point-cliffs-1024x682.jpg" alt="Kangaroo Point Cliffs Climb" class="activity-img">
-
-            <span class="card-tag">Adventure</span>
-
-            <div class="card-rating">
-                <span class="stars">★★★★★</span>
-                <span>4.8 (1,050+ reviews)</span>
-            </div>
-
-            <h3>Kangaroo Point Cliffs Climb</h3>
-
-            <p>Experience an exhilarating multi-level climb with epic views over the Brisbane River and skyline.</p>
-
-            <div class="card-price">
-                <span class="price-label">From (AUD)</span>
-                $89.00
-            </div>
-
-            <a href="https://viator.com" class="affiliate-btn" target="_blank">Check Availability & Prices</a>
-        </div>
-    </div>
-
-</div>
-
-</body>
-</html>
-
+            font
