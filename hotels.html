@@ -29,6 +29,38 @@
             margin: 40px 0;
         }
 
+        /* COMPARISON TABLE */
+.comparison h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 14px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+    font-size: 16px;
+}
+
+.comparison-table th {
+    background: #f5f5f5;
+    font-weight: bold;
+}
+
+.comparison-table tr:last-child td {
+    border-bottom: none;
+}
+
         /* HERO SECTION */
         .hero {
             position: relative;
@@ -172,6 +204,55 @@
             locations, amenities, and comfort. Compare the top 5 stays and book with guaranteed best rates.
         </p>
     </section>
+
+    <!-- COMPARISON TABLE -->
+<section class="comparison">
+    <h2>Hotel Comparison</h2>
+
+    <table class="comparison-table">
+        <tr>
+            <th>Hotel</th>
+            <th>Location</th>
+            <th>Best For</th>
+            <th>Rating</th>
+        </tr>
+
+        <tr>
+            <td>The Calile Hotel</td>
+            <td>Fortitude Valley</td>
+            <td>Design, Luxury, Couples</td>
+            <td>★★★★★</td>
+        </tr>
+
+        <tr>
+            <td>W Brisbane</td>
+            <td>CBD / Riverfront</td>
+            <td>Modern Luxury, Spa</td>
+            <td>★★★★★</td>
+        </tr>
+
+        <tr>
+            <td>The Westin Brisbane</td>
+            <td>Brisbane CBD</td>
+            <td>Business, Wellness</td>
+            <td>★★★★★</td>
+        </tr>
+
+        <tr>
+            <td>Emporium Hotel South Bank</td>
+            <td>South Bank</td>
+            <td>Romantic Stays, Views</td>
+            <td>★★★★★</td>
+        </tr>
+
+        <tr>
+            <td>Crystalbrook Vincent</td>
+            <td>Howard Smith Wharves</td>
+            <td>Nightlife, Riverfront</td>
+            <td>★★★★★</td>
+        </tr>
+    </table>
+</section>
 
     <div class="section-divider"></div>
 
