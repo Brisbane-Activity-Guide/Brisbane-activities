@@ -6,6 +6,37 @@
     <title>Brisbane Tours & Activities</title>
 
     <style>
+    .navbar {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto 40px auto;
+      display: flex;
+      gap: 25px;
+      padding: 20px 0;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .nav-link {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #2d3748;
+      text-decoration: none;
+      padding-bottom: 6px;
+      transition: color 0.2s ease, border-bottom 0.2s ease;
+    }
+
+    .nav-link:hover {
+      color: #0071eb;
+      border-bottom: 2px solid #0071eb;
+    }
+
+    .nav-link.active {
+      color: #0071eb;
+      border-bottom: 2px solid #0071eb;
+    }
+  </style>
+    
+    <style>
         * {
             box-sizing: border-box;
             margin: 0;
@@ -143,21 +174,9 @@
 <body>
     
 <nav class="navbar">
-    <a href="index.html" class="nav-link">Activities</a>
-    <a href="hotels.html" class="nav-link">Hotels</a>
+        <a href="hotels.html" class="nav-link">Hotels</a>
 </nav>
     
-.nav-link:hover {
-    color: #0071eb;
-    border-bottom: 2px solid #0071eb;
-}
-
-/* ← Insert your second one right here */
-.nav-link.active {
-    color: #0071eb;
-    border-bottom: 2px solid #0071eb;
-}
-
 <div class="grid-container">
 
     <!-- Card 1: Springbrook -->
